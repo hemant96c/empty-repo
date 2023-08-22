@@ -29,7 +29,7 @@ pipeline{
         stage("Invoke Lambda"){
             steps{
                 echo "Invoking your AWS Lambda"
-                sh 'aws lambda invoke --function-name lambda --log-type Tail out.json'
+                sh 'aws lambda invoke --function-name lambda1 --log-type Tail out.json'
                 sh 'cat out.json'
             }
         }
