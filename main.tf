@@ -42,9 +42,9 @@ resource "aws_security_group" "my_security_group" {
   }
 }
 
-resource "aws_lambda_function" "my_lambda_function1" {
+resource "aws_lambda_function" "my_lambda_function" {
   filename         = "lambda.zip"
-  function_name    = "lambda1"
+  function_name    = "lambda"
   role             = data.aws_iam_role.lambda.arn
   handler          = "lambda.lambda_handler"
   runtime          = "python3.7"
