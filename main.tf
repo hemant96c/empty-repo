@@ -13,7 +13,7 @@ resource "aws_route_table" "my_route_table" {
   vpc_id = data.aws_vpc.vpc.id
 
   route {
-    cidr_block = "0.0.0.0/0"
+    cidr_block = "10.0.0.0/16"
     nat_gateway_id = data.aws_nat_gateway.nat.id
   }
 
