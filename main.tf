@@ -34,14 +34,6 @@ resource "aws_security_group" "my_security_group" {
   name_prefix = "My Security Group"
   vpc_id      = data.aws_vpc.vpc.id
 
-  ingress {
-    from_port   = 0
-    to_port     = 0
-    self      = true
-    protocol    = "-1"
-    cidr_blocks = ["10.0.0.0/16"]
-  }
-
   egress {
     from_port   = 0
     to_port     = 0
