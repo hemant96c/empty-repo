@@ -1,0 +1,2 @@
+# empty-repo
+for exam
