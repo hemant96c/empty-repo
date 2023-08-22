@@ -1,5 +1,5 @@
 data "aws_nat_gateway" "nat" {
-  id = "nat-089afc4a1054d134c"
+  id = "nat-0d688bbff8a47b274"
 }
 
 data "aws_vpc" "vpc" {
